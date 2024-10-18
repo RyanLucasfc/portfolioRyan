@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ryan Lucas</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #13072e, #4e0d7c);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 0.9em;
+            color: #a9a9a9;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        nav button {
+            background-color: transparent;
+            border: 2px solid #4B0082;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #4B0082;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .skill-button {
+            background-color: #4B0082;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .skill-button:hover {
+            background-color: #6A0DAD;
+        }
+
+        .skill-description,
+        .skill-projects {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(75, 0, 130, 0.1);
+            border-left: 5px solid #4B0082;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        .dialogue-box {
+            padding: 20px;
+            background-color: rgba(75, 0, 130, 0.2);
+            border: 2px solid #4B0082;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .dialogue-box h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Ryan Lucas</h1>
+            <p>(MBA em Business Intelligence e Analytcs / Gestão Financeira / Ciências Econômicas / Data science)</p>
+            <nav>
+                <button onclick="showSection('apresentacao')">Apresentação</button>
+                <button onclick="showSection('habilidades')">Habilidades</button>
+                <button onclick="showSection('Graduações')">Graduações</button>
+                <button onclick="showSection('objetivos')">Objetivos</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container content">
+        <!-- Apresentação -->
+        <div id="apresentacao" class="section active">
+            <h2>Apresentação</h2>
+            <p>Olá, me chamo <strong>Ryan Lucas</strong>. Sou formado em <strong>Gestão Financeira</strong> pela <strong>Uniube</strong> e atualmente estou no quarto período de <strong>Ciências Econômicas</strong>. Também estou cursando um <strong>MBA em Business Intelligence</strong>, com foco em análise de dados e automação de processos empresariais.</p>
+
+            <p>Tenho uma grande facilidade em <strong>automatizar tarefas</strong>, tanto simples quanto complexas, utilizando ferramentas como <strong>Excel, VBA, Power BI, Power Automate</strong> e <strong>Python</strong>. Ao longo da minha trajetória, desenvolvi diversos projetos que trouxeram eficiência e precisão às operações das empresas onde atuei.</p>
+            
+            <p>Por exemplo, criei soluções automatizadas para a <strong>gestão de estoques</strong> e <strong>conferência de descontos</strong>, utilizando Excel e VBA, consolidando dados de diferentes filiais e agilizando processos manuais. Além disso, desenvolvi scripts em Python para a análise detalhada de <strong>DREs (Demonstração de Resultado do Exercício)</strong>, abrangendo cálculos de <strong>receita, lucro líquido, margem de contribuição</strong> e <strong>taxa de crescimento</strong>. Esses scripts geram gráficos automatizados para facilitar a interpretação dos dados financeiros.</p>
+            
+            <p>Recentemente, implementei uma automação com <strong>Power Automate</strong> para download de relatórios financeiros e controle de faturas, eliminando processos manuais repetitivos e aumentando a eficiência dos relatórios. Utilizei o <strong>Microsoft Edge</strong> para automatizar o acesso a plataformas online, otimizando o tempo gasto com downloads manuais.</p>
+            
+            <p>Outro projeto relevante foi a criação de um <strong>dashboard no Power BI</strong> para centralizar informações financeiras de diversas lojas, permitindo o acompanhamento de métricas como <strong>Margem Bruta, Margem Operacional, EBITDA</strong> e <strong>Margem Líquida</strong>. O dashboard integra dados de <strong>fluxo de caixa e DRE</strong>, proporcionando uma visão clara e interativa do desempenho da empresa ao longo dos trimestres.</p>
+            
+            <p>Também desenvolvi uma <strong>macro em VBA</strong> com mais de 400 linhas de código que automatiza a limpeza de grandes volumes de dados e utiliza funções como <strong>SOMASES</strong> para consolidar informações de diversas lojas em cidades como Uberaba, Monte Carmelo e Frutal. Este projeto reduziu significativamente o tempo de geração de relatórios e aumentou a precisão dos dados.</p>
+            
+            <p>Atualmente, estou desenvolvendo um projeto de <strong>Machine Learning em Python</strong>, utilizando modelos <strong>LSTM (Long Short-Term Memory)</strong> para prever indicadores financeiros como <strong>receita bruta, CMV (Custo de Mercadorias Vendidas)</strong> e <strong>lucro líquido</strong>, com base em dados históricos de empresas. Esse modelo visa facilitar a projeção de resultados trimestrais e apoiar decisões estratégicas empresariais.</p>
+            
+            <p>Embora eu não seja desenvolvedor e não tenha interesse em seguir uma carreira puramente técnica, sou altamente competente no uso de ferramentas avançadas para resolver problemas empresariais complexos. Meu objetivo é utilizar a tecnologia para <strong>simplificar processos</strong> e <strong>gerar valor</strong> através da automação e análise de dados, sempre buscando soluções que melhorem a eficiência operacional e impulsionem o crescimento das empresas.</p>
+    </div>
+
+        <!-- Habilidades -->
+        <div id="habilidades" class="section">
+            <h2>Habilidades</h2>
+            <button class="skill-button" onclick="showSkillDetails('python')">Python</button>
+            <button class="skill-button" onclick="showSkillDetails('excel')">Excel e VBA</button>
+            <button class="skill-button" onclick="showSkillDetails('powerautomate')">Power Automate</button>
+            <button class="skill-button" onclick="showSkillDetails('powerbi')">Power BI</button>
+            <button class="skill-button" onclick="showSkillDetails('mysql')">MySQL</button>
+
+            <div id="skill-details" class="skill-description"></div>
+            <div id="skill-projects" class="skill-projects"></div>
+        </div>
+
+        <!-- Graduações -->
+        <div id="Graduações" class="section">
+            <h2>Graduações</h2>
+            <button class="skill-button" onclick="showCourseDetails('mba')">MBA - Pós Graduação</button>
+            <button class="skill-button" onclick="showCourseDetails('graduacao')">Graduação</button>
+            <button class="skill-button" onclick="showCourseDetails('extensao')">Cursos de Extensão</button>
+
+            <div id="course-details" class="dialogue-box"></div>
+        </div>
+
+        <!-- Objetivos -->
+        <div id="objetivos" class="section">
+            <h2>Objetivos</h2>
+            <p>Meu objetivo é atuar em uma posição estratégica como <strong>Analista Financeiro</strong> ou <strong>Analista de Dados</strong>, onde eu possa integrar e expandir minhas competências técnicas em <strong>análise financeira</strong>, <strong>automação de processos</strong> e <strong>inteligência de dados</strong>. Estou motivado a contribuir de maneira significativa para a tomada de decisões estratégicas dentro da organização, utilizando minha experiência para transformar dados em insights valiosos que podem direcionar o desempenho e o crescimento financeiro da empresa.</p>
+
+            <p>Acredito que a intersecção entre finanças e tecnologia é crucial no cenário atual, e estou entusiasmado com a possibilidade de aplicar minhas habilidades em <strong>análise de dados</strong> para desenvolver soluções que otimizem processos financeiros e aprimorem a eficiência operacional. Tenho experiência em automação de tarefas repetitivas e na criação de dashboards interativos que possibilitam uma visualização clara e eficaz dos indicadores financeiros, facilitando a interpretação dos dados e a tomada de decisões informadas.</p>
+
+            <p>Além disso, estou comprometido em me manter atualizado sobre as tendências e inovações no campo da análise financeira e da tecnologia de dados. Estou sempre disposto a aprender novas ferramentas e metodologias que possam agregar valor ao trabalho da equipe e da organização como um todo. Meu foco é em resultados e em como posso ajudar a empresa a alcançar seus objetivos estratégicos, utilizando a tecnologia como aliada na transformação de processos e na criação de valor sustentável.</p>
+
+            <p>Estou empolgado com a perspectiva de colaborar com equipes multidisciplinares, onde poderei compartilhar meu conhecimento e aprender com profissionais experientes, contribuindo para um ambiente de trabalho inovador e dinâmico. Estou preparado para enfrentar desafios e buscar soluções criativas que aprimorem a gestão financeira e a análise de dados, sempre com o intuito de maximizar o potencial da empresa.</p>
+
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        const skillDetails = {
+            python: {
+                description: "<h3>Python</h3><p>Python é uma linguagem de programação versátil, conhecida por sua sintaxe simples e fácil de aprender. Ela é amplamente utilizada em diversas áreas, como desenvolvimento web, automação de tarefas, análise de dados e machine learning. Com um vasto ecossistema de bibliotecas, como Pandas para manipulação de dados e TensorFlow para inteligência artificial, Python é uma excelente escolha tanto para iniciantes quanto para desenvolvedores experientes. Além disso, sua comunidade ativa oferece grande suporte e recursos, tornando-a ideal para projetos de todos os níveis.</p>"
+            },
+            excel: {
+                description: "<h3>VBA</h3><p>VBA (Visual Basic for Applications) é uma linguagem de programação integrada ao Microsoft Office, utilizada principalmente para automatizar tarefas repetitivas e personalizar funções em programas como Excel, Word e Access. Com VBA, é possível criar macros, realizar operações em grandes volumes de dados e desenvolver soluções personalizadas para facilitar o trabalho diário. Embora seja mais específico para o ambiente Office, sua simplicidade e integração direta com as ferramentas tornam VBA uma opção poderosa para automações empresariais.</p>"
+            },
+            powerautomate: {
+                description: "<h3>Power Automate</h3><p>Power Automate é uma ferramenta da Microsoft que permite automatizar fluxos de trabalho em diversas aplicações e serviços, facilitando a integração entre diferentes plataformas. Com ele, é possível automatizar processos repetitivos, como envio de e-mails, criação de relatórios e sincronização de dados entre sistemas, sem a necessidade de programação avançada. Power Automate oferece uma interface intuitiva e uma ampla variedade de conectores que ajudam a otimizar tarefas em ambientes corporativos, aumentando a eficiência e produtividade.</p>"
+            },
+            powerbi: {
+                description: "<h3>Power BI</h3><p>Power BI é uma ferramenta de análise de dados da Microsoft que permite transformar dados em insights interativos e visuais. Com ele, é possível conectar-se a diversas fontes de dados, criar dashboards personalizados e gerar relatórios dinâmicos que auxiliam na tomada de decisões. Power BI é amplamente utilizado para análise financeira, acompanhamento de métricas de negócios e visualização de dados complexos, oferecendo uma interface amigável e funcionalidades poderosas para empresas de todos os portes.</p>"
+            },
+            mysql: {
+                description: "<h3>MySQL</h3><p>MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto, amplamente utilizado para armazenar, organizar e acessar dados em grandes volumes. Conhecido por sua alta performance, confiabilidade e facilidade de uso, MySQL é comumente utilizado em ambientes web, como back-end de sites e aplicativos, além de ser compatível com diversas linguagens de programação. Ele é popular tanto em pequenas aplicações quanto em grandes sistemas empresariais devido à sua escalabilidade e suporte para transações complexas.</p>"
+            }
+        };
+
+        const courseDetails = {
+            mba: {
+                description: `<h3>MBA em Business Intelligence e Analytcs</h3>
+                <p>Atualmente, estou cursando um MBA em Business Intelligence e Análise de Dados pela Uniube, um programa que proporciona uma sólida formação em ferramentas e técnicas avançadas de análise de dados. Durante o curso, tenho tido a oportunidade de me aprofundar em linguagens de programação como R e Python, além de explorar plataformas poderosas como Power BI, que permite a criação de dashboards dinâmicos e interativos, e soluções voltadas para Big Data. Com essas ferramentas, consigo não apenas melhorar os processos do meu cargo atual, otimizando o tempo de execução e aumentando a precisão nas análises financeiras, como também aplicar técnicas de automação para simplificar tarefas repetitivas.
+
+Além disso, a formação tem me capacitado a trabalhar com Machine Learning, o que inclui desde a modelagem preditiva até o uso de aprendizado por reforço, uma abordagem que permite ensinar máquinas a reconhecer padrões e tomar decisões com base em dados históricos. Esse tipo de tecnologia tem se mostrado particularmente valioso para a análise de grandes volumes de dados financeiros, permitindo a antecipação de tendências e a identificação de padrões de comportamento que auxiliam nas tomadas de decisão estratégicas. Assim, as habilidades adquiridas ao longo do MBA têm sido fundamentais para aplicar soluções inovadoras que agregam valor à minha atuação profissional, além de abrir novas possibilidades para o futuro na área de análise de dados e inteligência empresarial.
+</p>`
+            },
+            graduacao: {
+                description: `<h3>Superior Tecnólogo em Gestão Financeira</h3>
+                <p>Concluí minha graduação em Gestão Financeira em junho de 2024, após um curso de 2,5 anos que me proporcionou uma formação sólida em métodos de análise financeira aplicados a uma ampla variedade de negócios, desde microempresas (MEIs) até grandes corporações listadas na bolsa de valores. Ao longo desse período, tive a oportunidade de estudar profundamente diferentes estratégias financeiras que podem ser aplicadas para maximizar a eficiência e o desempenho econômico das empresas, independentemente do seu porte ou setor.
+
+O curso também incluiu uma forte ênfase em áreas essenciais da contabilidade, como contabilidade comercial, tributária e social, o que me deu uma visão abrangente sobre a gestão de finanças corporativas. Além disso, abordamos análises detalhadas de indicadores extraídos da Demonstração do Resultado do Exercício (DRE), como margens de lucro, rentabilidade e liquidez, o que permite avaliar a saúde financeira das empresas de maneira precisa. A formação também envolveu o estudo de técnicas de avaliação de empresas, oferecendo ferramentas para determinar o valor justo de mercado de uma companhia e auxiliar em processos de fusão, aquisição ou investimento.
+
+Esse conjunto de conhecimentos me preparou para atuar de forma eficiente em diversas áreas do setor financeiro, garantindo uma visão estratégica que abrange tanto o gerenciamento financeiro interno quanto a análise de mercado e o planejamento de crescimento a longo prazo
+</p>
+                <h3>Ciência Econômica</h3>
+                <p>Atualmente, estou cursando o bacharelado em Ciências Econômicas, encontrando-me no 4º período, praticamente na metade do curso, com previsão de conclusão em junho de 2026. Ao longo dessa jornada acadêmica, tenho me deparado com um vasto leque de disciplinas que exploram tanto o lado financeiro e comercial das empresas de diferentes portes e setores, quanto as dinâmicas econômicas mais amplas que envolvem o Estado e a economia global.
+
+O curso tem uma abordagem científica bastante rigorosa, o que permite uma compreensão profunda dos fundamentos econômicos e suas aplicações práticas. Entre as matérias, destaco os módulos de Cálculo I, II e III, que têm sido fundamentais para a construção de um pensamento analítico estruturado. Essas disciplinas não apenas me desafiam a aprimorar minhas habilidades matemáticas, como também fornecem a base necessária para me aprofundar nas análises estatísticas e quantitativas, elementos essenciais para entender melhor o comportamento de mercados e a performance financeira de empresas.
+
+Com o progresso no curso, estou cada vez mais preparado para realizar análises estatísticas complexas, o que certamente irá melhorar significativamente minhas habilidades atuais, especialmente na análise de dados econômicos e financeiros. Pretendo usar esse conhecimento para otimizar a tomada de decisões estratégicas e apoiar o desenvolvimento de soluções inovadoras tanto no setor privado quanto no público.
+</p>`
+            },
+            extensao: {
+                description: `<h3>Avaliação de Impacto</h3>
+                <p>Concluí recentemente um curso em Avaliação de Impacto, oferecido pela FGV, que me proporcionou uma visão aprofundada sobre a importância e as metodologias envolvidas na análise do impacto de projetos, políticas públicas e iniciativas corporativas. O curso foi essencial para entender como mensurar e avaliar os efeitos de ações em diferentes setores, como o econômico, social e ambiental, utilizando ferramentas de análise quantitativa e qualitativa.
+
+Durante o programa, aprendi a aplicar metodologias rigorosas para avaliar os impactos de curto e longo prazo de diferentes intervenções, levando em consideração tanto os benefícios quanto os possíveis efeitos adversos. O curso abordou desde a definição de indicadores e métricas de sucesso até a análise de resultados utilizando técnicas estatísticas avançadas. Além disso, foram explorados casos práticos de avaliação de impacto em áreas como sustentabilidade, desenvolvimento social e crescimento econômico, o que me permitiu ver como essas análises são aplicadas em contextos reais.
+
+Essa formação foi fundamental para aprimorar minhas habilidades analíticas e críticas, permitindo que eu avalie projetos com uma abordagem baseada em evidências, de modo a fornecer insights que auxiliem na tomada de decisões mais informadas e estratégicas. A capacidade de mensurar impactos de maneira precisa é uma competência que fortalece minha atuação profissional, especialmente em áreas que demandam uma visão clara dos resultados e consequências de ações implementadas.
+</p>
+                <h3>Power BI</h3>
+                <p>Concluí um curso avançado de Power BI em 2022, oferecido por instituições renomadas como Huawei e Xperium. Essa formação foi fundamental para aprofundar meu entendimento sobre a criação de dashboards interativos e dinâmicos, além de aprimorar minhas habilidades na visualização de dados e na análise de informações financeiras.
+
+Durante o curso, explorei em detalhes as diversas funcionalidades do Power BI, incluindo a importação de dados de múltiplas fontes, como Excel, bancos de dados SQL e serviços na nuvem. Aprendi a modelar dados de forma eficiente, criando relacionamentos entre diferentes tabelas para garantir a integridade e a coerência das informações apresentadas. O curso também abrangeu técnicas avançadas de DAX (Data Analysis Expressions), que me permitiram realizar cálculos complexos e criar medidas personalizadas, essenciais para a análise financeira.
+
+Um dos aspectos mais enriquecedores do curso foi a prática em projetos reais, onde pude aplicar os conhecimentos adquiridos na criação de relatórios interativos que auxiliam na tomada de decisões estratégicas. Aprendi a utilizar gráficos, tabelas e indicadores-chave de desempenho (KPIs) de maneira eficaz, garantindo que as informações fossem apresentadas de forma clara e intuitiva para os stakeholders.
+
+Essa formação em Power BI não apenas aprimorou minhas competências técnicas, mas também fortaleceu minha capacidade de contar histórias com dados, permitindo-me transmitir insights valiosos que podem impactar diretamente a performance e os resultados das organizações. Estou entusiasmado para aplicar essas habilidades em meu ambiente de trabalho, contribuindo para a melhoria contínua dos processos de análise e visualização de dados.</p>
+                <h3>Python</h3>
+                <p>Concluí um curso avançado de Python em 2024, onde adquiri habilidades essenciais para o desenvolvimento de soluções de programação que otimizam processos e análises de dados. Essa formação foi fundamental para aprimorar minha capacidade de automatizar tarefas, analisar grandes volumes de informações e desenvolver scripts que facilitam a tomada de decisões.
+
+Durante o curso, mergulhei em diversos aspectos da linguagem Python, aprendendo desde os fundamentos de programação até conceitos avançados, como manipulação de dados com bibliotecas como Pandas e NumPy. A prática com esses recursos me permitiu realizar análises estatísticas e financeiras de forma eficiente, além de lidar com conjuntos de dados complexos e realizar as limpezas e transformações necessárias para a análise.
+
+Além disso, explorei técnicas de visualização de dados utilizando bibliotecas como Matplotlib e Seaborn, que me capacitaram a apresentar informações de maneira clara e impactante. O curso também incluiu a introdução a conceitos de aprendizado de máquina, proporcionando uma base sólida para o desenvolvimento de modelos preditivos e análises mais sofisticadas.
+
+Um dos aspectos mais valiosos dessa formação foi a ênfase em projetos práticos, nos quais pude aplicar as habilidades adquiridas em cenários do mundo real. Trabalhei em casos que envolviam a análise de DRE, cálculo de margens e projeções financeiras, o que me permitiu compreender a importância do Python na automação e análise de dados financeiros.
+
+Essa formação em Python não apenas ampliou meu repertório técnico, mas também me equipou com as ferramentas necessárias para abordar desafios complexos e desenvolver soluções inovadoras em minha carreira profissional. Estou animado para aplicar essas habilidades em projetos futuros, contribuindo para a eficiência e a eficácia das operações financeiras.
+</p>
+                <h3>Big Data e Mineração de Dados</h3>
+                <p>Concluí um curso avançado em Big Data e Mineração de Dados em 2024, que me proporcionou uma compreensão profunda das técnicas e ferramentas utilizadas para lidar com grandes volumes de dados e extrair insights valiosos. Essa formação foi fundamental para aprimorar minha capacidade de analisar dados em larga escala e desenvolver soluções eficazes para desafios complexos em ambientes corporativos.
+
+Durante o curso, explorei conceitos essenciais de Big Data, como arquitetura de dados, armazenamento em nuvem e processamento distribuído, utilizando plataformas como Hadoop e Spark. Aprendi a trabalhar com diferentes tipos de dados, incluindo estruturados, semiestruturados e não estruturados, e a aplicar técnicas de limpeza e transformação de dados para prepará-los para análise.
+
+Além disso, o curso abordou diversas metodologias de mineração de dados, permitindo-me entender como identificar padrões, tendências e anomalias em conjuntos de dados complexos. A prática com algoritmos de aprendizado de máquina, como classificação, regressão e clustering, foi especialmente enriquecedora, pois me capacitou a desenvolver modelos preditivos que ajudam na tomada de decisões informadas.
+
+Um dos aspectos mais valiosos dessa formação foi a ênfase em projetos práticos, onde pude aplicar os conhecimentos adquiridos em situações do mundo real. Trabalhei em casos que envolviam a análise de grandes conjuntos de dados financeiros, possibilitando uma visão mais clara sobre o comportamento do mercado e as preferências dos consumidores.
+
+Essa formação em Big Data e Mineração de Dados não apenas ampliou meu conhecimento técnico, mas também me equipou com as habilidades necessárias para abordar desafios analíticos em minha carreira profissional. Estou entusiasmado para aplicar essas habilidades em projetos futuros, contribuindo para a otimização de processos e a inovação nas operações empresariais</p>`
+            }
+        };
+
+        function showSkillDetails(skill) {
+            document.getElementById('skill-details').innerHTML = skillDetails[skill].description;
+        }
+
+        function showCourseDetails(course) {
+            document.getElementById('course-details').innerHTML = courseDetails[course].description;
+        }
+    </script>
+</body>
+
+</html>
